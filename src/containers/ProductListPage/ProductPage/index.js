@@ -29,7 +29,7 @@ const ProductPage = (props) => {
               key={index}
               href={banner.navigateTo}
             >
-              <img src={generatePublicUrl(banner.img)} alt={banner.id} />
+              <img src={`https://flipkartbackend.herokuapp.com${banner.img}`} alt={banner.id} />
             </a>
           )
         }
@@ -59,7 +59,7 @@ const ProductPage = (props) => {
                   objectFit: 'contain',
                   padding: '5px'
                 }}
-                src={generatePublicUrl(product.img)}
+                src={`https://flipkartbackend.herokuapp.com${product.img}`}
                 alt=''
               />
             </Card>
