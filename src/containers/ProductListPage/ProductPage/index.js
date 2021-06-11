@@ -5,6 +5,7 @@ import getParams from '../../../utils/getParams';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Card from '../../../components/UI/Card';
+import { generatePublicUrl } from '../../../urlConfig';
 
 const ProductPage = (props) => {
   const dispatch = useDispatch();
@@ -28,10 +29,12 @@ const ProductPage = (props) => {
               key={index}
               href={banner.navigateTo}
             >
-              <img src={`http://localhost:2000${banner.img}`} alt={banner.id} />
+              {/* <img src={generatePublicUrl(banner.img)} alt={banner.id} /> */}
+              <img src={`https://flipkartbackend.herokuapp.com${banner.img}`} alt={banner.id} />
             </a>
           )
         }
+        {/* {console.log('bannersssssssss', page.banners)} */}
       </Carousel>
       <div
         style={{
@@ -58,7 +61,7 @@ const ProductPage = (props) => {
                   objectFit: 'contain',
                   padding: '5px'
                 }}
-                src={`http://localhost:2000${product.img}`}
+                src={`https://flipkartbackend.herokuapp.com${product.img}`}
                 alt=''
               />
             </Card>
