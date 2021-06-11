@@ -3,7 +3,7 @@ import './styles.css';
 import flipkartLogo from '../../images/logo/flipkart.png';
 import goldenStar from '../../images/logo/golden-star.png';
 import { IoIosArrowDown, IoIosCart, IoIosSearch } from 'react-icons/io';
-import { login, signout, signup as _signup } from '../../actions';
+import { getCartItems, login, signout, signup as _signup } from '../../actions';
 
 import {
   Modal,
@@ -62,9 +62,9 @@ const Header = (props) => {
     }
   }, [auth.authenticate]);
 
-  // useEffect(() => {
-  //   dispatch(getCartItems());
-  // }, []);
+  useEffect(() => {
+    dispatch(getCartItems());
+  }, []);
 
   const renderLoggedInMenu = () => {
     return (

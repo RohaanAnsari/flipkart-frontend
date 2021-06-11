@@ -11,11 +11,11 @@ import PriceDetails from '../../components/PriceDetails';
 const CartPage = (props) => {
   const cart = useSelector(state => state.cart)
   const auth = useSelector(state => state.auth)
-  const [cartItems, setCartItems] = useState('');
+  const [cartItems, setCartItems] = useState(cart.cartItems);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // setCartItems(cart.cartItems);
+    setCartItems(cart.cartItems);
   }, []);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const CartPage = (props) => {
       </>
     )
   }
-
+  // console.log('cartitems----', cartItems)
   return (
     <div>
       <Layout>
