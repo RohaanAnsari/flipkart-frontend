@@ -16,7 +16,7 @@ const CartPage = (props) => {
 
   useEffect(() => {
     setCartItems(cart.cartItems);
-  }, []);
+  }, [cart.cartItems]);
 
   useEffect(() => {
     if (auth.authenticate) {
