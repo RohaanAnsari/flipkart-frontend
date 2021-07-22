@@ -1,6 +1,6 @@
 <h1>Complete E-Commerce application made using MERN stack  </h1> 
 <h3>This is the Frontend application for this E-Commerce</h3>  
- <strong>DEMO</strong>: <br/ >https://flipkartfrontend.herokuapp.com/
+ <strong>DEMO</strong>: <br/> <strong>https://flipkartfrontend.herokuapp.com/</strong>
  <br/>
  <br/>
  Note :-  <strong> All the information is fetched from admin panel of this application </strong>
