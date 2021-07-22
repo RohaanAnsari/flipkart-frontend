@@ -14,7 +14,7 @@
   <li> Single page for all the products to view all the details </li>
   <li> Get Order Summary for the order at the time of ordering </li>
   <li> See order details for your order </li>
-  <li> Track package information like, packed, shipped, delivered  </li>
+  <li> Track your package information like, packed, shipped, delivered  </li>
 </ui>
 
 
