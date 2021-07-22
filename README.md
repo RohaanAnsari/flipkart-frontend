@@ -2,8 +2,6 @@
 <h3>This is the Frontend application for this E-Commerce</h3>  
  <strong>DEMO</strong>: <br/ >https://flipkartfrontend.herokuapp.com/
  <br/>
-  <br/>
- Note :-  <strong> Changes in Admin application will all be reflected in Front end of this application </strong>
  <h2>Features Included :- </h3>
 <ul> 
   <li> Authentication </li> 
